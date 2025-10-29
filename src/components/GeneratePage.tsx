@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import { Volume2, ChevronLeft, Loader2, Brain, Palette, Target } from 'lucide-react';
-import { BackgroundPattern, IconWrapper, AnimatedElement, StepNumber, CardWithShadow } from './ImageComponents';
+import { Volume2, ChevronLeft, Loader2 } from 'lucide-react';
+import { BackgroundPattern, StepNumber, CardWithShadow } from './ImageComponents';
 import { DeepSeekAPI, ChineseName, NameGenerationRequest } from '../services/api';
 import { useLanguage } from '../hooks/useLanguage';
 
@@ -146,24 +146,6 @@ export default function GeneratePage({ onNavigate }: { onNavigate: (page: string
       {/* Background decorative elements */}
       <BackgroundPattern type="mixed" />
       
-      {/* Additional floating elements */}
-      <div className="absolute inset-0 overflow-hidden pointer-events-none">
-        <AnimatedElement animation="float" className="absolute top-32 right-32">
-          <IconWrapper size="w-10 h-10" color="text-blue-400">
-            <Brain className="w-full h-full" />
-          </IconWrapper>
-        </AnimatedElement>
-        <AnimatedElement animation="pulse" className="absolute bottom-32 left-32">
-          <IconWrapper size="w-8 h-8" color="text-purple-400">
-            <Palette className="w-full h-full" />
-          </IconWrapper>
-        </AnimatedElement>
-        <AnimatedElement animation="bounce" className="absolute top-1/2 right-1/4">
-          <IconWrapper size="w-6 h-6" color="text-green-400">
-            <Target className="w-full h-full" />
-          </IconWrapper>
-        </AnimatedElement>
-      </div>
 
       <nav className="fixed top-0 left-0 right-0 bg-white/70 backdrop-blur-2xl z-50 border-b border-gray-200/50">
         <div className="max-w-7xl mx-auto px-6 h-11 flex items-center justify-between text-sm">
@@ -191,7 +173,7 @@ export default function GeneratePage({ onNavigate }: { onNavigate: (page: string
         </div>
       </nav>
 
-      <main className="pt-11">
+      <main className="pt-11 relative z-10">
         <div className="py-12 px-6">
           <div className="max-w-6xl mx-auto">
             <div className="text-center mb-12">

@@ -75,7 +75,7 @@ export const BackgroundPattern = ({
 }) => {
   if (type === 'circles') {
     return (
-      <div className="absolute inset-0 overflow-hidden">
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <DecorativeCircle 
           size="w-80 h-80" 
           className="absolute -top-40 -right-40" 
@@ -108,16 +108,7 @@ export const BackgroundPattern = ({
 
   if (type === 'mixed') {
     return (
-      <div className="absolute inset-0 overflow-hidden">
-        <DecorativeCircle 
-          size="w-32 h-32" 
-          className="absolute top-20 right-10" 
-        />
-        <DecorativeCircle 
-          size="w-40 h-40" 
-          color="bg-cyan-100" 
-          className="absolute bottom-20 left-10" 
-        />
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <GradientCircle 
           size="w-24 h-24" 
           className="absolute top-1/2 left-1/3" 
