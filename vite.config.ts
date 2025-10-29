@@ -11,8 +11,28 @@ export default defineConfig({
     outDir: 'dist',
     assetsDir: 'assets',
     sourcemap: false,
+    rollupOptions: {
+      external: [
+        '@alicloud/sms20170525',
+        '@alicloud/openapi-client',
+        '@alicloud/tea-util',
+        'tencentcloud-sdk-nodejs',
+        '@sendgrid/mail',
+        'mailgun-js',
+        'nodemailer',
+      ],
+    },
   },
   optimizeDeps: {
-    exclude: ['lucide-react'],
+    exclude: [
+      'lucide-react',
+      '@alicloud/sms20170525',
+      '@alicloud/openapi-client',
+      '@alicloud/tea-util',
+      'tencentcloud-sdk-nodejs',
+      '@sendgrid/mail',
+      'mailgun-js',
+      'nodemailer',
+    ],
   },
 });
