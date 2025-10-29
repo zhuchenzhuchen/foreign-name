@@ -1,7 +1,16 @@
 node_modules
 .env
 .env.local
+.env.*.local
 *.log
 .DS_Store
 stagewise.json
+.vscode
+.idea
+*.swp
+*.swo
+coverage
+.cache
+dist
+dist-ssr
 

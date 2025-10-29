@@ -81,6 +81,54 @@ The application uses the DeepSeek model through OpenRouter for generating Chines
 - **Max Tokens**: 2000
 - **Response Format**: Structured JSON with name details
 
+## Deployment
+
+### Vercel 自动部署
+
+项目已配置 Vercel 自动部署。每次将代码推送到 Git 仓库的主分支（main/master）时，Vercel 会自动触发部署。
+
+#### 设置自动部署的步骤：
+
+1. **连接 Git 仓库到 Vercel**
+   - 登录 [Vercel](https://vercel.com/)
+   - 进入项目设置（Project Settings）
+   - 在 "Git" 部分连接你的 Git 仓库（GitHub/GitLab/Bitbucket）
+
+2. **配置自动部署**
+   - 在项目设置中选择 "Git" 标签
+   - 确保 "Automatic Deployments" 已启用
+   - 选择要部署的分支（通常是 `main` 或 `master`）
+
+3. **环境变量配置**
+   - 在 Vercel 项目设置中，进入 "Environment Variables"
+   - 添加以下环境变量：
+     ```
+     VITE_OPENROUTER_API_KEY=your_api_key_here
+     VITE_SITE_URL=https://your-domain.vercel.app
+     VITE_SITE_NAME=Chinese Name Finder
+     ```
+
+4. **推送代码触发部署**
+   ```bash
+   git add .
+   git commit -m "Your commit message"
+   git push origin main
+   ```
+
+#### 部署配置说明：
+
+- **构建命令**: `npm run build`
+- **输出目录**: `dist`
+- **框架**: 自定义（Vite）
+- **路由**: SPA 模式（所有路由重定向到 index.html）
+
+#### 验证部署：
+
+部署成功后，你可以在 Vercel 仪表板中：
+- 查看部署日志
+- 访问预览 URL
+- 查看构建错误（如果有）
+
 ## Development
 
 ### Available Scripts
