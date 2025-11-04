@@ -254,7 +254,7 @@ export default function LandingPage({ onNavigate }: { onNavigate: (page: string)
             {/* Example names showcase */}
             <div className="mt-12 grid grid-cols-2 md:grid-cols-3 gap-4 max-w-2xl mx-auto">
               <div className="bg-white rounded-xl p-4 shadow-sm border border-gray-100">
-                <div className="text-3xl font-bold text-gray-900 mb-1">李文博</div>
+                <div className="text-3xl font-bold text-gray-900 mb-1">张浩然</div>
                 <div className="text-sm text-gray-500">David</div>
               </div>
               <div className="bg-white rounded-xl p-4 shadow-sm border border-gray-100">
