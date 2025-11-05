@@ -413,6 +413,32 @@ export default function LandingPage({ onNavigate }: { onNavigate: (page: string)
           </div>
         </section>
 
+        {/* Stats Section */}
+        <section className="bg-white py-24 sm:py-32">
+          <div className="mx-auto max-w-7xl px-6 lg:px-8">
+            <dl className="grid grid-cols-1 gap-x-8 gap-y-16 text-center lg:grid-cols-3">
+              <div className="mx-auto flex max-w-xs flex-col gap-y-4">
+                <dt className="text-base/7 text-gray-600">Chinese Names Generated</dt>
+                <dd className="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+                  50,000+
+                </dd>
+              </div>
+              <div className="mx-auto flex max-w-xs flex-col gap-y-4">
+                <dt className="text-base/7 text-gray-600">Satisfied Users Worldwide</dt>
+                <dd className="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+                  98%
+                </dd>
+              </div>
+              <div className="mx-auto flex max-w-xs flex-col gap-y-4">
+                <dt className="text-base/7 text-gray-600">Countries Served</dt>
+                <dd className="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
+                  120+
+                </dd>
+              </div>
+            </dl>
+          </div>
+        </section>
+
         <section className="py-24 px-6 bg-gray-50">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl md:text-5xl font-semibold text-gray-900 mb-6 tracking-tight">
