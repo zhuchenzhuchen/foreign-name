@@ -457,10 +457,98 @@ export default function LandingPage({ onNavigate }: { onNavigate: (page: string)
         </section>
       </main>
 
-      <footer className="border-t border-gray-200 py-6">
+      <footer className="border-t border-gray-200 py-12 bg-gray-50">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center text-sm text-gray-500">
-            {t.landing.copyright}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-8">
+            <div>
+              <h3 className="font-semibold text-gray-900 mb-4">Product</h3>
+              <div className="space-y-2">
+                <button
+                  onClick={() => onNavigate('generate')}
+                  className="block text-sm text-gray-600 hover:text-gray-900 transition-colors"
+                >
+                  Generate Name
+                </button>
+                <button
+                  onClick={() => onNavigate('gallery')}
+                  className="block text-sm text-gray-600 hover:text-gray-900 transition-colors"
+                >
+                  Name Gallery
+                </button>
+                <button
+                  onClick={() => onNavigate('price')}
+                  className="block text-sm text-gray-600 hover:text-gray-900 transition-colors"
+                >
+                  Pricing
+                </button>
+              </div>
+            </div>
+            
+            <div>
+              <h3 className="font-semibold text-gray-900 mb-4">Company</h3>
+              <div className="space-y-2">
+                <button
+                  onClick={() => onNavigate('about')}
+                  className="block text-sm text-gray-600 hover:text-gray-900 transition-colors"
+                >
+                  About Us
+                </button>
+                <button
+                  onClick={() => onNavigate('team')}
+                  className="block text-sm text-gray-600 hover:text-gray-900 transition-colors"
+                >
+                  Our Team
+                </button>
+                <button
+                  onClick={() => onNavigate('contact')}
+                  className="block text-sm text-gray-600 hover:text-gray-900 transition-colors"
+                >
+                  Contact
+                </button>
+              </div>
+            </div>
+            
+            <div>
+              <h3 className="font-semibold text-gray-900 mb-4">Resources</h3>
+              <div className="space-y-2">
+                <button
+                  onClick={() => onNavigate('faq')}
+                  className="block text-sm text-gray-600 hover:text-gray-900 transition-colors"
+                >
+                  FAQ
+                </button>
+                <button
+                  onClick={() => onNavigate('about')}
+                  className="block text-sm text-gray-600 hover:text-gray-900 transition-colors"
+                >
+                  Blog
+                </button>
+              </div>
+            </div>
+            
+            <div>
+              <h3 className="font-semibold text-gray-900 mb-4">Legal</h3>
+              <div className="space-y-2">
+                <button
+                  onClick={() => onNavigate('privacy')}
+                  className="block text-sm text-gray-600 hover:text-gray-900 transition-colors"
+                >
+                  Privacy Policy
+                </button>
+                <button
+                  onClick={() => onNavigate('privacy')}
+                  className="block text-sm text-gray-600 hover:text-gray-900 transition-colors"
+                >
+                  Terms of Service
+                </button>
+              </div>
+            </div>
+          </div>
+          
+          <div className="pt-8 border-t border-gray-200">
+            <div className="text-center text-sm text-gray-500">
+              {t.landing.copyright}
+            </div>
           </div>
         </div>
       </footer>
