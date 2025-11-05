@@ -383,6 +383,36 @@ export default function LandingPage({ onNavigate }: { onNavigate: (page: string)
           </div>
         </section>
 
+        {/* Testimonial Section */}
+        <section className="relative isolate overflow-hidden bg-white px-6 py-24 sm:py-32 lg:px-8">
+          <div className="absolute inset-0 -z-10 bg-[radial-gradient(45rem_50rem_at_top,theme(colors.blue.100),white)] opacity-20" />
+          <div className="absolute inset-y-0 right-1/2 -z-10 mr-16 w-[200%] origin-bottom-left skew-x-[-30deg] bg-white shadow-xl ring-1 shadow-blue-600/10 ring-blue-50 sm:mr-28 lg:mr-0 xl:mr-16 xl:origin-center" />
+          <div className="mx-auto max-w-2xl lg:max-w-4xl">
+            <div className="mx-auto w-16 h-16 bg-gradient-to-br from-blue-600 to-cyan-600 rounded-2xl flex items-center justify-center">
+              <span className="text-white font-bold text-2xl">中</span>
+            </div>
+            <figure className="mt-10">
+              <blockquote className="text-center text-xl/8 font-semibold text-gray-900 sm:text-2xl/9">
+                <p>
+                  "As an expat working in China, having an authentic Chinese name has been invaluable. This service gave me '李明辉' - a name that perfectly captures my personality and is easy for my colleagues to remember. The cultural depth and meaning behind it made me feel truly connected to Chinese culture."
+                </p>
+              </blockquote>
+              <figcaption className="mt-10">
+                <div className="mx-auto w-10 h-10 bg-gradient-to-br from-blue-500 to-cyan-500 rounded-full flex items-center justify-center">
+                  <User className="w-5 h-5 text-white" />
+                </div>
+                <div className="mt-4 flex items-center justify-center space-x-3 text-base">
+                  <div className="font-semibold text-gray-900">Michael Anderson</div>
+                  <svg width={3} height={3} viewBox="0 0 2 2" aria-hidden="true" className="fill-gray-900">
+                    <circle r={1} cx={1} cy={1} />
+                  </svg>
+                  <div className="text-gray-600">Business Consultant, Shanghai</div>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+
         <section className="py-24 px-6 bg-gray-50">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl md:text-5xl font-semibold text-gray-900 mb-6 tracking-tight">
