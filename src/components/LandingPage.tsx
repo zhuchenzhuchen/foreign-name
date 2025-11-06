@@ -541,6 +541,12 @@ export default function LandingPage({ onNavigate }: { onNavigate: (page: string)
                 >
                   Terms of Service
                 </button>
+                <button
+                  onClick={() => onNavigate('refund')}
+                  className="block text-sm text-gray-600 hover:text-gray-900 transition-colors"
+                >
+                  Refund Policy
+                </button>
               </div>
             </div>
           </div>

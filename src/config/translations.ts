@@ -231,6 +231,107 @@ export interface Translations {
     generateFailed: string;
     apiNotConfigured: string;
   };
+
+  // 退款政策
+  refund: {
+    title: string;
+    subtitle: string;
+    lastUpdated: string;
+    days30: string;
+    days30Desc: string;
+    simpleProcess: string;
+    simpleProcessDesc: string;
+    noQuestions: string;
+    noQuestionsDesc: string;
+    section1Title: string;
+    section1Content: string;
+    guarantee: string;
+    guaranteeDesc: string;
+    section2Title: string;
+    eligibleTitle: string;
+    eligibleItems: string[];
+    notEligibleTitle: string;
+    notEligibleItems: string[];
+    section3Title: string;
+    step1Title: string;
+    step1Desc: string;
+    subject: string;
+    subjectText: string;
+    step2Title: string;
+    step2Desc: string;
+    step3Title: string;
+    step3Desc: string;
+    step4Title: string;
+    step4Desc: string;
+    section4Title: string;
+    processingItems: string[];
+    section5Title: string;
+    creditCard: string;
+    creditCardDesc: string;
+    paypal: string;
+    paypalDesc: string;
+    alipay: string;
+    alipayDesc: string;
+    wechat: string;
+    wechatDesc: string;
+    section6Title: string;
+    section6Content: string;
+    partialRefundItems: string[];
+    contactTitle: string;
+    contactContent: string;
+    responseTime: string;
+    responseTimeDesc: string;
+    phone: string;
+    satisfaction: string;
+  };
+
+  // 联系我们
+  contact: {
+    title: string;
+    subtitle: string;
+    getInTouch: string;
+    email: string;
+    emailDesc: string;
+    phone: string;
+    phoneDesc: string;
+    address: string;
+    businessHours: string;
+    mondayFriday: string;
+    saturdaySunday: string;
+    timezone: string;
+    followUs: string;
+    sendMessage: string;
+    sendMessageDesc: string;
+    successTitle: string;
+    successMessage: string;
+    yourName: string;
+    namePlaceholder: string;
+    yourEmail: string;
+    emailPlaceholder: string;
+    subject: string;
+    selectSubject: string;
+    generalInquiry: string;
+    technicalSupport: string;
+    feedback: string;
+    refundRequest: string;
+    partnership: string;
+    other: string;
+    message: string;
+    messagePlaceholder: string;
+    sending: string;
+    sendButton: string;
+    quickHelp: string;
+    quickHelpDesc: string;
+    visitFAQ: string;
+    needHelp: string;
+    needHelpDesc: string;
+    faq: string;
+    faqDesc: string;
+    documentation: string;
+    documentationDesc: string;
+    directEmail: string;
+    directEmailDesc: string;
+  };
 }
 
 export const translations: Record<Language, Translations> = {
@@ -576,6 +677,124 @@ export const translations: Record<Language, Translations> = {
       generateFailed: 'Failed to generate Chinese name. Please try again.',
       apiNotConfigured: 'API key not configured. Please set VITE_OPENROUTER_API_KEY in your environment variables.',
     },
+    refund: {
+      title: 'Refund Policy',
+      subtitle: 'We stand behind our service with a fair and transparent refund policy',
+      lastUpdated: 'Last Updated: November 6, 2025',
+      days30: '30-Day Guarantee',
+      days30Desc: 'Full refund within 30 days of purchase',
+      simpleProcess: 'Simple Process',
+      simpleProcessDesc: 'Easy refund request with minimal steps',
+      noQuestions: 'Fair Policy',
+      noQuestionsDesc: 'Clear terms with customer satisfaction priority',
+      section1Title: '1. Our Commitment to You',
+      section1Content: 'At Chinese Name Finder, we are committed to providing you with meaningful, culturally authentic Chinese names. We want you to be completely satisfied with your experience. If for any reason you are not happy with our service, we offer a straightforward refund policy.',
+      guarantee: '30-Day Money-Back Guarantee',
+      guaranteeDesc: 'If you are not satisfied with our service within 30 days of your purchase, you can request a full refund. No questions asked, no hassle.',
+      section2Title: '2. Refund Eligibility',
+      eligibleTitle: 'You Are Eligible for a Refund If:',
+      eligibleItems: [
+        'You purchased a paid plan (Pro or Premium) within the last 30 days',
+        'You experienced technical issues that prevented you from using the service',
+        'The generated names did not meet the quality standards described',
+        'You were charged incorrectly or multiple times',
+        'The service did not function as advertised'
+      ],
+      notEligibleTitle: 'Refunds Are Not Available For:',
+      notEligibleItems: [
+        'Purchases made more than 30 days ago',
+        'Free plan users (as no payment was made)',
+        'Accounts that violated our Terms of Service',
+        'Requests made after extensive use of the service (100+ name generations)',
+        'Change of mind after 30 days from purchase date'
+      ],
+      section3Title: '3. How to Request a Refund',
+      step1Title: 'Contact Our Support Team',
+      step1Desc: 'Send an email to our support team with your account details and purchase information. Please include your order number and the reason for your refund request.',
+      subject: 'Subject',
+      subjectText: 'Refund Request - [Your Order Number]',
+      step2Title: 'Verification Process',
+      step2Desc: 'Our team will review your request within 24-48 hours. We may ask for additional information to verify your purchase and account.',
+      step3Title: 'Approval Notification',
+      step3Desc: 'Once approved, you will receive a confirmation email with details about your refund and the expected processing time.',
+      step4Title: 'Refund Processing',
+      step4Desc: 'Refunds are processed to your original payment method within 5-10 business days, depending on your payment provider.',
+      section4Title: '4. Refund Processing Time',
+      processingItems: [
+        'Credit/Debit Card: 5-10 business days (depending on your bank)',
+        'PayPal: 3-5 business days',
+        'Alipay/WeChat Pay: 3-7 business days',
+        'Bank Transfer: 7-14 business days'
+      ],
+      section5Title: '5. Refund Methods',
+      creditCard: 'Credit/Debit Card',
+      creditCardDesc: 'Refunded to the original card used for purchase',
+      paypal: 'PayPal',
+      paypalDesc: 'Refunded to your PayPal account balance',
+      alipay: 'Alipay',
+      alipayDesc: 'Refunded to your Alipay account',
+      wechat: 'WeChat Pay',
+      wechatDesc: 'Refunded to your WeChat wallet',
+      section6Title: '6. Partial Refunds',
+      section6Content: 'In some cases, we may offer partial refunds based on your usage of the service. Partial refunds may apply when:',
+      partialRefundItems: [
+        'You have used a significant portion of your plan benefits',
+        'You are downgrading from a higher-tier plan mid-cycle',
+        'Technical issues affected only part of your subscription period'
+      ],
+      contactTitle: 'Questions About Refunds?',
+      contactContent: 'If you have any questions about our refund policy or need assistance with a refund request, please contact us:',
+      responseTime: 'Response Time',
+      responseTimeDesc: 'We respond within 24-48 hours',
+      phone: 'Phone',
+      satisfaction: 'Your satisfaction is our priority. We are here to help!'
+    },
+    contact: {
+      title: 'Contact Us',
+      subtitle: 'We\'re here to help! Get in touch with our team for support, questions, or feedback.',
+      getInTouch: 'Get in Touch',
+      email: 'Email',
+      emailDesc: 'For general inquiries and support',
+      phone: 'Phone',
+      phoneDesc: 'Monday - Friday, 9 AM - 6 PM PST',
+      address: 'Office Address',
+      businessHours: 'Business Hours',
+      mondayFriday: 'Monday - Friday: 9:00 AM - 6:00 PM PST',
+      saturdaySunday: 'Saturday - Sunday: Closed',
+      timezone: 'Pacific Standard Time (PST)',
+      followUs: 'Follow Us',
+      sendMessage: 'Send Us a Message',
+      sendMessageDesc: 'Fill out the form below and we\'ll get back to you within 24 hours.',
+      successTitle: 'Message Sent Successfully!',
+      successMessage: 'Thank you for contacting us. We\'ll get back to you within 24 hours.',
+      yourName: 'Your Name',
+      namePlaceholder: 'Enter your full name',
+      yourEmail: 'Your Email',
+      emailPlaceholder: 'Enter your email address',
+      subject: 'Subject',
+      selectSubject: 'Select a subject',
+      generalInquiry: 'General Inquiry',
+      technicalSupport: 'Technical Support',
+      feedback: 'Feedback',
+      refundRequest: 'Refund Request',
+      partnership: 'Partnership Opportunity',
+      other: 'Other',
+      message: 'Message',
+      messagePlaceholder: 'Tell us how we can help you...',
+      sending: 'Sending...',
+      sendButton: 'Send Message',
+      quickHelp: 'Need Quick Help?',
+      quickHelpDesc: 'Check out our FAQ section for instant answers to common questions.',
+      visitFAQ: 'Visit FAQ',
+      needHelp: 'Need More Help?',
+      needHelpDesc: 'Choose the best way to reach us based on your needs.',
+      faq: 'FAQ',
+      faqDesc: 'Find answers to common questions',
+      documentation: 'Documentation',
+      documentationDesc: 'Learn how to use our service',
+      directEmail: 'Direct Email',
+      directEmailDesc: 'Email us for personalized support'
+    },
   },
   zh: {
     nav: {
@@ -918,6 +1137,124 @@ export const translations: Record<Language, Translations> = {
       enterName: '请输入您的英文名字',
       generateFailed: '生成中文名字失败。请重试。',
       apiNotConfigured: 'API密钥未配置。请在环境变量中设置VITE_OPENROUTER_API_KEY。',
+    },
+    refund: {
+      title: '退款政策',
+      subtitle: '我们以公平透明的退款政策支持我们的服务',
+      lastUpdated: '最后更新：2025年11月6日',
+      days30: '30天保证',
+      days30Desc: '购买后30天内全额退款',
+      simpleProcess: '简单流程',
+      simpleProcessDesc: '简单的退款申请，最少的步骤',
+      noQuestions: '公平政策',
+      noQuestionsDesc: '清晰的条款，客户满意度优先',
+      section1Title: '1. 我们对您的承诺',
+      section1Content: '在Chinese Name Finder，我们致力于为您提供有意义、文化真实的中文名字。我们希望您对我们的服务完全满意。如果出于任何原因您对我们的服务不满意，我们提供直接的退款政策。',
+      guarantee: '30天退款保证',
+      guaranteeDesc: '如果您在购买后30天内对我们的服务不满意，可以申请全额退款。无需询问，没有麻烦。',
+      section2Title: '2. 退款资格',
+      eligibleTitle: '您有资格获得退款，如果：',
+      eligibleItems: [
+        '您在过去30天内购买了付费计划（专业版或高级版）',
+        '您遇到了阻止您使用服务的技术问题',
+        '生成的名字未达到所述的质量标准',
+        '您被错误收费或多次收费',
+        '服务未按广告宣传的方式运行'
+      ],
+      notEligibleTitle: '以下情况不提供退款：',
+      notEligibleItems: [
+        '超过30天前的购买',
+        '免费计划用户（因为没有付款）',
+        '违反我们服务条款的账户',
+        '在大量使用服务后提出的请求（超过100次名字生成）',
+        '购买日期后30天后改变主意'
+      ],
+      section3Title: '3. 如何申请退款',
+      step1Title: '联系我们的支持团队',
+      step1Desc: '向我们的支持团队发送电子邮件，包含您的账户详细信息和购买信息。请包括您的订单号和退款请求的原因。',
+      subject: '主题',
+      subjectText: '退款请求 - [您的订单号]',
+      step2Title: '验证流程',
+      step2Desc: '我们的团队将在24-48小时内审核您的请求。我们可能会要求提供额外信息以验证您的购买和账户。',
+      step3Title: '批准通知',
+      step3Desc: '一旦批准，您将收到一封确认电子邮件，其中包含有关您的退款和预期处理时间的详细信息。',
+      step4Title: '退款处理',
+      step4Desc: '退款将在5-10个工作日内处理到您的原始支付方式，具体取决于您的支付提供商。',
+      section4Title: '4. 退款处理时间',
+      processingItems: [
+        '信用卡/借记卡：5-10个工作日（取决于您的银行）',
+        'PayPal：3-5个工作日',
+        '支付宝/微信支付：3-7个工作日',
+        '银行转账：7-14个工作日'
+      ],
+      section5Title: '5. 退款方式',
+      creditCard: '信用卡/借记卡',
+      creditCardDesc: '退款到用于购买的原始卡',
+      paypal: 'PayPal',
+      paypalDesc: '退款到您的PayPal账户余额',
+      alipay: '支付宝',
+      alipayDesc: '退款到您的支付宝账户',
+      wechat: '微信支付',
+      wechatDesc: '退款到您的微信钱包',
+      section6Title: '6. 部分退款',
+      section6Content: '在某些情况下，我们可能会根据您对服务的使用情况提供部分退款。部分退款可能适用于：',
+      partialRefundItems: [
+        '您已使用了计划福利的很大一部分',
+        '您在周期中从更高级别的计划降级',
+        '技术问题仅影响了您订阅期的一部分'
+      ],
+      contactTitle: '有关退款的问题？',
+      contactContent: '如果您对我们的退款政策有任何疑问或需要退款请求方面的帮助，请联系我们：',
+      responseTime: '响应时间',
+      responseTimeDesc: '我们在24-48小时内回复',
+      phone: '电话',
+      satisfaction: '您的满意是我们的首要任务。我们在这里帮助您！'
+    },
+    contact: {
+      title: '联系我们',
+      subtitle: '我们随时为您提供帮助！联系我们的团队获取支持、提问或反馈。',
+      getInTouch: '联系方式',
+      email: '电子邮件',
+      emailDesc: '一般咨询和支持',
+      phone: '电话',
+      phoneDesc: '周一至周五，上午9点至下午6点（太平洋时间）',
+      address: '办公地址',
+      businessHours: '营业时间',
+      mondayFriday: '周一至周五：上午9:00 - 下午6:00（太平洋时间）',
+      saturdaySunday: '周六至周日：关闭',
+      timezone: '太平洋标准时间（PST）',
+      followUs: '关注我们',
+      sendMessage: '给我们留言',
+      sendMessageDesc: '填写下面的表单，我们将在24小时内回复您。',
+      successTitle: '消息发送成功！',
+      successMessage: '感谢您联系我们。我们将在24小时内回复您。',
+      yourName: '您的姓名',
+      namePlaceholder: '请输入您的全名',
+      yourEmail: '您的邮箱',
+      emailPlaceholder: '请输入您的邮箱地址',
+      subject: '主题',
+      selectSubject: '选择主题',
+      generalInquiry: '一般咨询',
+      technicalSupport: '技术支持',
+      feedback: '反馈意见',
+      refundRequest: '退款请求',
+      partnership: '合作机会',
+      other: '其他',
+      message: '留言',
+      messagePlaceholder: '告诉我们如何帮助您...',
+      sending: '发送中...',
+      sendButton: '发送消息',
+      quickHelp: '需要快速帮助？',
+      quickHelpDesc: '查看我们的常见问题部分，获取常见问题的即时答案。',
+      visitFAQ: '访问常见问题',
+      needHelp: '需要更多帮助？',
+      needHelpDesc: '根据您的需求选择最佳的联系方式。',
+      faq: '常见问题',
+      faqDesc: '查找常见问题的答案',
+      documentation: '文档',
+      documentationDesc: '了解如何使用我们的服务',
+      directEmail: '直接邮件',
+      directEmailDesc: '通过电子邮件获取个性化支持'
     },
   },
 };
